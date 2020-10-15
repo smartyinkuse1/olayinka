@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>Smartyinkuse</title>
+</head>
+
+<body>
+
+    <header class="wow zoomIn" id="home">
+        <div class="logo">
+            <h1>OLAYINKA</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home1">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </header>
+
+    <div class="main-header" id="home1">
+        <div class="header-content wow zoomIn" style="animation-delay: 600ms;">
+            <h1 class="header_main_content_h1">
+                HEY, <br>
+                I'm <span>Olayinka</span> <br>
+                Software Developer
+            </h1>
+            <button class="cta">Email Us</button>
+            <div class="logo_socials">
+                <div class="logo_socials_soc">
+                    <a href="https://twitter.com/smartyiinkuse" target="_blank" class="fa fa-twitter tweet"
+                        aria-hidden="true"></a>
+                    <a href="https://www.facebook.com/olayinka.famutimi" target="_blank" class="fa fa-facebook fb"
+                        aria-hidden="true"></a>
+                    <a href="https://instagram.com/smartyinkuse_coder" target="_blank" class="fa fa-instagram ig"
+                        aria-hidden="true"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header_main_img wow zoomIn" style="animation-delay: 900ms;">
+            <img src="./images/4401280.jpg" alt="" width="80%">
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="about-heading">
+            <h1 class="wow zoomIn">ABOUT</h1>
+        </div>
+        <div class="about">
+            <div class="wow zoomIn" style="animation-delay: 300ms;">
+                <img src="./images/yinka.png" alt="" height="500px">
+            </div>
+            <div class="wow zoomIn" style="animation-delay: 600ms;">
+                <h1>I'm Olayinka</h1>
+                <p>
+                    I have really had the zeal to impact lives through tech, I still have so much to do. Working towards
+                    that, I'm an Experienced Software Engineer with a demonstrated history of working in the information
+                    technology and services industry, building scalable, user friendly apps. Working closely with
+                    Product designers to ensure Suitable User experience. I'm very open to learning Advanced
+                    Technologies.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-section" id="skills">
+        <div class="skill-section-heading">
+            <h1 class="wow zoomIn">SKILLS</h1>
+        </div>
+        <div class="skills">
+            <div class="skills-content wow zoomIn" style="animation-delay: 300ms;">
+                <img src="./images/Group 3.svg" alt="" width="90%">
+                <img src="./images/Group 2.svg" alt="" width="90%">
+                <img src="./images/Group 4.svg" alt="" width="90%">
+                <img src="./images/Group 1.svg" alt="" width="90%">
+            </div>
+            <div class="skills-img wow zoomIn" style="animation-delay: 300ms;">
+                <img src="./images/4136918.jpg" alt="" width="65%">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="work-section" id="work">
+        <div class="work-section-heading">
+            <h1 class="wow zoomIn">WORK</h1>
+        </div>
+        <div class="work wow zoomIn">
+            <img src="./images/fruitiza.png" alt="">
+            <img src="./images/paygain.png" alt="">
+            <img src="./images/house.png" alt="">
+            <img src="./images/tellver1.png" alt="">
+            <img src="./images/ncp.png" alt="">
+            <img src="./images/expeiria.png" alt="">
+        </div>
+    </div>
+
+    <div class="contact-heading wow zoomIn">
+        <h1>CONTACT</h1>
+    </div>
+    <div class="containers wow zoomIn" style="animation-delay: 300ms;" id="contact">
+        <form id="myForm">
+            <div class="form-field">
+                <label for="fullname">Fullname</label>
+                <input type="text" class="fullname" id="fullname" name="fullname" required autofocus placeholder="Fullname">
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="text" class="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea type="text" class="message" id="message" name="message" required placeholder="Message here..."
+                    rows="4"></textarea>
+            </div>
+            <div class="form-field btn">
+                <input type="submit" class="submit" name="submit" value="Send">
+            </div>
+        </form>
+    </div>
+
+    <footer class="end">
+        <div class="logo-social">
+            <h1>Thank You</h1>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () { myFunction() }
+        function myFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("home").className = "sticky"
+            } else {
+                document.getElementById("home").className = ""
+            }
+        }
+        document.querySelector('.hamburger').addEventListener('click', (e) => {
+            e.preventDefault()
+            document.querySelector('.navigation').classList.toggle("active")
+        })
+        let wow = new WOW({
+            boxClass: "wow",
+            animateClass: "animated",
+            offset: 0,
+            mobile: true,
+            live: true,
+        });
+        wow.init();
+        const myForm = document.getElementById("myForm")
+
+        myForm.addEventListener("submit", e => {
+            e.preventDefault();
+            const name = document.getElementById("fullname").value
+            const email = document.getElementById("email").value
+            const message = document.getElementById("message").value
+            const value = {
+                name,
+                email,
+                message,
+                date: Date.now()
+            }
+
+            db.collection("contact").add(value)
+                .then(function (docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                    document.getElementById("fullname").value = ""
+                    document.getElementById("email").value = ""
+                    document.getElementById("message").value =""
+
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+        })
+
+
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAvOtOx4sSk6IgAAiRgrpXe0om8deEmPGM",
+            authDomain: "olayinka-c624f.firebaseapp.com",
+            databaseURL: "https://olayinka-c624f.firebaseio.com",
+            projectId: "olayinka-c624f",
+            storageBucket: "olayinka-c624f.appspot.com",
+            messagingSenderId: "987946059942",
+            appId: "1:987946059942:web:e1b106d30b63370b220c67",
+            measurementId: "G-YE4M2B73P0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore()
+    </script>
+</body>
+
+</html>
